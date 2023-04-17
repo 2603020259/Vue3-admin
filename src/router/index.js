@@ -70,6 +70,11 @@ const router = createRouter({
             name: 'register',
             meta: { title: '注册' }
         },
+        {
+            path: '/error',
+            component: () => import('../views/404/Errer.vue'),
+            name: 'error',
+        },
     ]
 });
 router.beforeEach((to, from, next) => {

@@ -7,6 +7,7 @@ import store from './store/index';
 import 'vant/es/toast/style';
 import 'vant/es/dialog/style';
 import { Toast } from 'vant';
+import './mock/index.js';
 const app=createApp(App);
 app.use(router).use(store).use(Toast);
 app.mount('#app')
